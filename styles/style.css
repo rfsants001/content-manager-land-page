@@ -316,6 +316,11 @@ footer .footer-content {
     align-items: center;
 }
 
+footer .footer-content p {
+    font-size: 1rem;
+    color: var(--card-subtitle);
+}
+
 
 /* Animations */
 
@@ -387,6 +392,12 @@ footer .footer-content {
 
     header nav a.link-home {
         display: none;
+    }
+
+
+    .card-section article .card .card-header img {
+        width: 40%;
+        top: -40%;
     }
 }
 
