@@ -331,3 +331,42 @@ footer .footer-content {
         opacity: 0;
     }
 }
+
+
+
+/* Resposive */
+
+@media screen and (max-width: 980px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero article {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    footer .footer-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 780px){
+
+
+
+    .card-section article {
+        flex-direction: column;
+    }
+
+    .card-section article .card {
+        margin: 60px auto;
+        width: 80%;
+    }
+}

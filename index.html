@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Content Manager</title>
@@ -27,11 +28,11 @@
     </header>
     <section class="container hero">
         <article>
-            <p>Gerencie todas suas <i>tarefas</i>, de forma simple e rápida.</p>
-            <p>Cronometre tarefas rapidas e adicione <i>lembretes</i> para tarefas futuras.</p>
-                    <p>Visualize de forma <i>simplificada</i> tarefas concluidas, não concluidas e planejadas, em um interativo <i>dashboard</i></p>
+            <p data-aos="fade-right" data-aos-duration="1000">Gerencie todas suas <i>tarefas</i>, de forma simple e rápida.</p>
+            <p data-aos="fade-right" data-aos-duration="1500">Cronometre tarefas rapidas e adicione <i>lembretes</i> para tarefas futuras.</p>
+                    <p data-aos="fade-right" data-aos-duration="2000">Visualize de forma <i>simplificada</i> tarefas concluidas, não concluidas e planejadas, em um interativo <i>dashboard</i></p>
         </article>
-        <img src="image/Hero.svg" alt="Hero">
+        <img src="image/Hero.svg" alt="Hero" data-aos="fade-left" data-aos-duration="2000">
     </section>
     <div class="container division">
         <img src="image/chevron-down.svg" alt="chevron">
@@ -39,7 +40,7 @@
     <section class="container card-section">
         <h2>Como o <i>Content Manager</i> você vai</h2>
         <article>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1500">
                 <div class="card-header">
                     <div class="card-header-text">
                         <h4>Card Title</h4>
@@ -54,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="2000">
                 <div class="card-header">
                     <div class="card-header-text">
                         <h4>Card Title</h4>
@@ -69,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="2500">
                 <div class="card-header">
                     <div class="card-header-text">
                         <h4>Card Title</h4>
@@ -90,7 +91,7 @@
     </div>
     <section class=" container sign-in-section">
         <h2>Cadastre-se</h2>
-        <div class="container-form">
+        <div class="container-form" data-aos="fade-up" data-aos-duration="2000">
             <form>
                 <div class="input-form">
                     <label>Nome</label>
@@ -114,5 +115,9 @@
            <p>@ Content Manager - 2022</p>
         </div>
     </footer>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
 </body>
 </html>
