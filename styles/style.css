@@ -1,0 +1,333 @@
+:root {
+    --body-color: #16171B;
+
+    --action-color: #9506d9;
+
+    --text-white: #ffffff;
+
+    --card-body: rgba(70, 68, 95, 0.8);
+    --card-subtitle: #a9a9a9;
+    --card-shadow: #9506da;
+
+    --form-bg: rgba(70, 68, 95, 0.58);
+
+    --div-color: #2f3137;
+    --div-icon: #616161;
+
+    --footer-bg: rgba(50, 49, 66, 0.55);
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: var(--body-color);
+   background-image: url(../image/bg-image.svg);
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: cover;
+}
+h1, h2, h3, p, span {
+    color: var(--text-white);
+}
+
+.container {
+    max-width: 1240px;
+    margin: 5.625rem auto;
+}
+
+/* Division */
+.division {
+    position: relative;
+    height: 1px;
+    border: 1px solid var(--div-color);
+}
+
+.division img {
+    position: absolute;
+    top: -11.71px;
+    right: 50%;
+    left: 50%;
+
+    animation-name: chevron_animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+/* Header section */
+
+header {
+    padding-top: 1.5rem;
+    height: 6.25rem;
+}
+
+header .container {
+    margin-top: 0px;
+
+    height: 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header .container nav {
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+    padding-top: .938rem;
+    align-items: center;
+}
+
+header .container nav a {
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+header .container nav a.link-home {
+  transition: color .3s;
+}
+
+header .container nav a.link-home:hover {
+    border-bottom: 1px solid var(--action-color);
+    color: var(--card-subtitle);
+}
+
+
+header .container nav a.dashboard-link {
+    position: relative;
+    background-color: var(--text-white);
+    border-radius: 1.25rem;
+    padding: 0.438rem .938rem;
+    color: var(--action-color);
+    transition: transform .3s;
+}
+
+a.dashboard-link::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background: var(--action-color);
+  border-radius: 1.25rem;
+  transition: transform .3s;
+}
+
+a.dashboard-link::before {
+  transform-origin: right top;
+  transform: scale(0, 1);
+}
+
+a.dashboard-link:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+a.dashboard-link:hover {
+    transform-origin: left top;
+    background-color: transparent !important;
+    color: var(--text-white) !important;
+    transform: scale(1,1);
+}
+
+/* Hero section */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero article {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.hero article p i {
+    font-weight: 500;
+    color: var(--action-color);
+}
+
+/* Card section */
+
+.card-section h2 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 125px;
+}
+
+.card-section h2 i {
+    font-weight: 500;
+    color: var(--action-color);
+}
+
+.card-section article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-section article .card {
+    width: 30%;
+    background-color: var(--card-body);
+    border-radius: 15px;
+    box-shadow: 0px 20px 15px 4px rgba(151, 5, 221, 0.15);
+}
+
+article .card .card-header {
+    padding: 16px;
+    position: relative;
+}
+
+article .card .card-header .card-header-text h4 {
+    font-size: 20px;
+    color: var(--text-white);
+}
+
+article .card .card-header .card-header-text span {
+    font-size: 16px;
+    color: var(--card-subtitle);
+}
+
+article .card .card-header img {
+    position: absolute;
+    top: -70%;
+    right: 0;
+}
+
+article .card .card-body {
+    padding: 16px;
+}
+
+/* Sign In section */
+
+.sign-in-section h2 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sign-in-section form {
+    background: var(--form-bg);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px 100px;
+    border-radius: 15px;
+}
+
+.sign-in-section form .input-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.sign-in-section form .input-form label {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-white);
+    margin-bottom: 10px;
+}
+
+.sign-in-section form .input-form input {
+    padding: 10px 15px;
+    background-color: var(--text-white);
+    border-radius: 10px;
+    border: none;
+}
+
+.sign-in-section form .input-form input:focus {
+    outline: none;
+}
+
+.sign-in-section form .input-form input::placeholder{
+    color: var(--action-color);
+}
+
+.sign-in-section form .button-form {
+    text-align: center;
+}
+
+.sign-in-section form button {
+    position: relative;
+    background-color: var(--text-white);
+    border-radius: 1rem;
+    border: none;
+    padding: 0.438rem .938rem;
+    color: var(--action-color);
+    transition: transform .3s;
+
+    width: 50%;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sign-in-section form button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background: var(--action-color);
+  border-radius: 1.25rem;
+  transition: transform .3s;
+}
+
+.sign-in-section form button::before {
+  transform-origin: right top;
+  transform: scale(0, 1);
+}
+
+.sign-in-section form button:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.sign-in-section form button:hover {
+    transform-origin: left top;
+    background-color: transparent !important;
+    color: var(--text-white) !important;
+    transform: scale(1,1);
+}
+
+/* Footer section */
+
+footer {
+    background: var(--footer-bg);
+}
+
+footer .footer-content {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Animations */
+
+@keyframes chevron_animation {
+    0% {
+        top: -11.75px;
+        opacity: 1;
+    }
+
+    50% {
+        top: -5px;
+        opacity: .5;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 0;
+    }
+}

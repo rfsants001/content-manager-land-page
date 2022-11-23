@@ -1,59 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Content Manager</title>
 </head>
 <body>
     <header>
-        <img>
-        <nav>
-            <a>
+        <div class="container">
+            <img class="logo" src="image/Logo.svg" width="180" height="52" >
+          <nav>
+            <a href="#" class="link-home">
                 <span>Home</span>
             </a>
-            <a>
-                <span>My Dashboard</span>
+            <a href="#" class="dashboard-link">
+                My Dashboard
             </a>
-        </nav>
+          </nav>
+        </div>
     </header>
-    <section>
-        <article></article>
-        <img>
-    </section>
-    <section>
-        <h2>Como o Content Manager você vai</h2>
+    <section class="container hero">
         <article>
-            <div>
-                <div>
+            <p>Gerencie todas suas <i>tarefas</i>, de forma simple e rápida.</p>
+            <p>Cronometre tarefas rapidas e adicione <i>lembretes</i> para tarefas futuras.</p>
+                    <p>Visualize de forma <i>simplificada</i> tarefas concluidas, não concluidas e planejadas, em um interativo <i>dashboard</i></p>
+        </article>
+        <img src="image/Hero.svg" alt="Hero">
+    </section>
+    <div class="container division">
+        <img src="image/chevron-down.svg" alt="chevron">
+    </div>
+    <section class="container card-section">
+        <h2>Como o <i>Content Manager</i> você vai</h2>
+        <article>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-text">
+                        <h4>Card Title</h4>
+                        <span>Card Subtitle</span>
+                    </div>
+                    <img src="image/computer-1.svg" alt="Computer">
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus, quos deserunt accusantium sunt sit quaerat in eveniet nam? Ratione laborum consequuntur deserunt sint adipisci sunt tenetur molestiae sed sapiente?
+                    </p>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-text">
+                        <h4>Card Title</h4>
+                        <span>Card Subtitle</span>
+                    </div>
+                    <img src="image/notes.svg" alt="Notes">
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus, quos deserunt accusantium sunt sit quaerat in eveniet nam? Ratione laborum consequuntur deserunt sint adipisci sunt tenetur molestiae sed sapiente?
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-text">
+                        <h4>Card Title</h4>
+                        <span>Card Subtitle</span>
+                    </div>
+                    <img src="image/computer-2.svg" alt="Computer">
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus, quos deserunt accusantium sunt sit quaerat in eveniet nam? Ratione laborum consequuntur deserunt sint adipisci sunt tenetur molestiae sed sapiente?
+                    </p>
                 </div>
             </div>
         </article>
     </section>
-    <section>
+   <div class="container division">
+        <img src="image/chevron-down.svg" alt="chevron">
+    </div>
+    <section class=" container sign-in-section">
         <h2>Cadastre-se</h2>
-        <div>
+        <div class="container-form">
             <form>
-                <div>
+                <div class="input-form">
                     <label>Nome</label>
                     <input type="text" name="nome" id="nome" placeholder="Nome">
                 </div>
-                <div>
+                <div class="input-form">
                     <label>Email</label>
                     <input type="email" name="email" id="email" placeholder="Email">
                 </div>
+                <div class="button-form">
                 <button>
                     Cadastrar
                 </button>
+                </div>
             </form>
         </div>
     </section>
     <footer>
-        <img src="" alt="">
-        <p>@ Content Manager - 2022</p>
+        <div class="footer-content">
+           <img src="image/Logo-footer.svg" alt="Logo">
+           <p>@ Content Manager - 2022</p>
+        </div>
     </footer>
 </body>
 </html>
