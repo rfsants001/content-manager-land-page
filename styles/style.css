@@ -71,6 +71,10 @@ header .container {
     align-items: flex-start;
 }
 
+header img.img-mobile {
+    display: none;
+}
+
 header .container nav {
     display: flex;
     gap: 2rem;
@@ -368,5 +372,26 @@ footer .footer-content {
     .card-section article .card {
         margin: 60px auto;
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header img.img-desktop {
+        display: none;
+    }
+
+    header img.img-mobile {
+        display: block;
+        width: auto;
+    }
+
+    header nav a.link-home {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .sign-in-section form {
+        padding: 40px 10px;
     }
 }
