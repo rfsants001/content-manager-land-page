@@ -399,10 +399,8 @@ footer .footer-content p {
         width: 40%;
         top: -40%;
     }
-}
 
-@media screen and (max-width: 380px) {
-    .sign-in-section form {
+ .sign-in-section form {
         padding: 40px 10px;
     }
 }
